@@ -8,10 +8,6 @@
 
 include_once ("account.php");
 include_once 'curl.php';
-//echo 2;
-
-//var_dump($_GET['code']);
-//var_dump($_GET['state']);
 
 $appID = APPID;
 $appSecret = APPSECRET;
