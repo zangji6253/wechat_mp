@@ -17,4 +17,4 @@ $url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$appID}&secret=
 
 $r = geturl($url);
 
-var_dump($r);
+var_dump($r['openid']);
