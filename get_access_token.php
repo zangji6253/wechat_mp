@@ -7,10 +7,13 @@ getAccessToken();
 function getAccessToken()
 {
 //    var_dump(APPID);
+    $appID = APPID;
+    $appSecret = APPSECRET;
+
     $token = json_decode(file_get_contents('access_token.json'));
 
     if (!$token || !$token->access_token || time() > $token->expires_time) {
-        $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={APPID}&secret={APPSECRET}";
+        $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$appID}&secret={$appSecret}";
 
         var_dump($url);
 
