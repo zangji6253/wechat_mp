@@ -1,0 +1,10 @@
+<?php
+echo 2;
+traceHttp();
+echo 3;
+function traceHttp()
+{
+  $content = date('Y-m-d H:i:s')."\n";
+  $log_filename = "log";
+  file_put_contents($log_filename,$content,FILE_APPEND);
+}
