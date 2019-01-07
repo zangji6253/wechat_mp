@@ -1,6 +1,6 @@
 <?php
-include 'curl.php';
-include 'get_access_token.php';
+include_once 'curl.php';
+include_once 'get_access_token.php';
 
 $access_token = getAccessToken();
 
