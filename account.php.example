@@ -1,4 +1,4 @@
 <?php
-$appID = '123';
-$appsecret = '456';
-define("TOKEN", "789");
+define("TOKEN", "123");
+define("APPID", "456");
+define("APPSECRET", "789");
