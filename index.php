@@ -1,4 +1,5 @@
 <?php
+include ("account.php");
 if (checkSignature())
     echo $_GET["echostr"];
 else
