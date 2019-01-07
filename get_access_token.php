@@ -11,6 +11,8 @@ function getAccessToken()
 
         $result = geturl($url);
         file_put_contents('access_token', json_encode(['access_token' => $result['access_token'], 'expires_time' => (time() + 3600)]));
+
+        return $result['access_token'];
     } else {
         return $token->access_token;
     }
