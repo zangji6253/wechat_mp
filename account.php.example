@@ -1,3 +1,4 @@
 <?php
 $appID = '123';
 $appsecret = '456';
+define("TOKEN", "789");
