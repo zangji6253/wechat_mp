@@ -2,6 +2,8 @@
 include_once("curl.php");
 include_once("account.php");
 
+getAccessToken();
+
 function getAccessToken()
 {
     $token = json_decode(file_get_contents('access_token.json'));
@@ -15,6 +17,7 @@ function getAccessToken()
 
         return $result['access_token'];
     } else {
+        var_dump($token);
         return $token->access_token;
     }
 }
