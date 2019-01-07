@@ -6,6 +6,7 @@ getAccessToken();
 
 function getAccessToken()
 {
+    var_dump(APPID);
     $token = json_decode(file_get_contents('access_token.json'));
 
     if (!$token || $token->access_token || time() > $token->expires_time) {
